@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车 - 京东商城</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+<!--   顶部导航栏-->
+    <div class="shortcut">
+        <nav class="top-guide">
+<!--          城市选择-->
+           <div class="location">
+            <div class="city">送至： 
+                <span class="city-text">四川</span>
+<!--                小箭头-->
+                <i class="guide-arrow"><s>◇</s></i>
+            </div>
+            <ul class="city-list">
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">北京</a></li>
+            </ul>
+           </div>
+           <ul class="TR-guide">
+               <li class="TRG-prompt">
+                   <a href="">maxim3244</a>&nbsp;&nbsp;
+                   <a href="">退出</a>
+<!--
+                   <a class="link-login" href="">你好，请登录</a>&nbsp;&nbsp;
+                   <a class="link-regist" href="">免费注册</a>
+-->
+               </li>
+            <li class="spacer"></li>
+               <li>
+                   <a href="">我的订单</a>
+               </li>
+               <li class="spacer"></li>
+               <li>
+                <div class="DropBar">
+                   <a href="">我的京东</a>
+                   <i class="guide-arrow"><s>◇</s></i>
+                </div>
+                   <ul class="Drop-content">
+                       <li><a href="">消息</a></li>
+                       <li><a href="">我的京豆</a></li>
+                   </ul>
+               </li>
+            <li class="spacer"></li>
+               <li>
+                   <a href="">京东会员</a>
+               </li>
+            <li class="spacer"></li>
+               <li>
+                   <a href="">企业采购</a>
+               </li>
+            <li class="spacer"></li>
+                <li>
+                <div class="DropBar">
+                    <i class="phone-icon"></i>
+                   <a href="">手机京东</a>
+                   <i class="guide-arrow"><s>◇</s></i>
+                </div>
+                   <ul class="Drop-content">
+                       <li><a href="">京东客户端</a></li>
+                       <li><a href="">京东金融客户端</a></li>
+                   </ul>
+               </li>
+            <li class="spacer"></li>
+               <li>
+                <div class="DropBar">
+                   <a href="">关注京东</a>
+                   <i class="guide-arrow"><s>◇</s></i>
+                </div>
+                   <ul class="Drop-content qr-icon">
+                       <li><img src="img/57bfe32fNbf75b97c.jpg" alt=""></li>
+                   </ul>
+               </li>
+            <li class="spacer"></li>
+               <li>
+                <div class="DropBar">
+                   <a href="">客户服务</a>
+                   <i class="guide-arrow"><s>◇</s></i>
+                </div>
+                   <ul class="Drop-content DC-service">
+                       <li><a href="">消息</a></li>
+                       <li><a href="">我的京豆</a></li>
+                   </ul>
+               </li>
+            <li class="spacer"></li>
+                <li>
+                <div class="DropBar">
+                   <a href="">网站导航</a>
+                   <i class="guide-arrow"><s>◇</s></i>
+                </div>
+                   <ul class="Drop-content-right">
+                       <li><a href="">消息</a></li>
+                       <li><a href="">我的京豆</a></li>
+                   </ul>
+               </li>
+           </ul>
+        </nav>
+    </div>
+<!--    头部--logo和搜索框-->
+    <header class="page-header clearfix">
+        <div class="logo-area">
+            <a class="logo-icon" href=""></a>
+            <a class="cart-icon" href=""></a>
+        </div>
+        <div class="search-area">
+            <input class="search-input" type="text" placeholder="自营">
+            <input class="search-button" type="button" value="搜索">
+        </div>
+    </header>
+<!--    主内容区域-->
+    <div class="main-container">
+        <div class="cart-header"> 
+            <ul class="cart-chose">
+                <li class="chose-item active">
+                    <a href="">全部商品 <span>5</span></a>
+                </li>
+                <li class="chose-item">
+                    <a href="">京东大药房 <span></span></a>
+                </li>
+            </ul>
+            <div class="cart-location">
+                <span>配送至：</span>
+                <div class="CL-form">
+                    <div class="CLF-text-wrap">
+                        <div class="CLF-text">四川成都市金牛区</div>
+                        <i class="CLF-arrow"></i>
+                    </div>
+                    <div class="CLF-list">常用地址</div>
+                </div>
+            </div>
+        </div>
+<!--        选择线-->
+        <div class="chose-line">
+                <div class="chose-bar"></div>
+        </div>
+<!--        购物车模块-->
+        <div class="cart-container">
+            <div class="cart-content">
+<!--                   商品列表表头信息块-->
+                <div class="CC-header clearfix">
+
+                    <div class="CCH-item">
+                        <input class="CC-checkbox" type="checkbox">
+                        全选
+                    </div>
+                    <div class="CCH-item">
+                        商品
+                    </div>
+                    <div class="CCH-item CCH-price">
+                        单价
+                    </div>
+                    <div class="CCH-item CCH-quantity">
+                        数量
+                    </div>
+                    <div class="CCH-item CCH-sum">
+                        小计
+                    </div>
+                    <div class="CCH-item CCH-action">
+                        操作
+                    </div>
+                </div>
+<!--                单位店铺模块-->
+                <div class="cart-list-item">
+                    <div class="shop-title">
+                        <input class="CC-checkbox" type="checkbox">
+                        <a class="shop-name JDSelf" href=""></a>
+                        <div class="shop-freight">
+                            <div class="freight-info">已免运费</div>
+                        </div>
+                    </div>
+                    <div class="goods-list">
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item">
+                            <div class="GI-header">
+                                <div class="GIH-info">
+                                    <a href="">
+                                        <span class="manjian-icon">满减<i></i></span>
+                                        活动商品购满¥99.00， 即可享受满减 >
+                                    </a>
+                                    <a class="coudan" href="">&nbsp;去凑单&nbsp;></a>
+                                </div>
+                            </div>
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                        <div class="GII-line"></div>
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-item2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">索尼（SONY）【PS4国行游戏】最终幻想 15 Final Fantasy XV</a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+-->
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="【PS4游戏】最终幻想15普通版">
+                                            颜色：【PS4游戏】最终幻想15普通版
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥349.00</strong>
+                                        <!--<a class="sales-promotion" href="">更多促销<i></i></a>-->
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥349.00</strong>
+                                        <span class="goods-weight">0.29kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item GI-first">
+                            <div class="GI-header">
+                                <div class="GIH-info">
+                                    <a href="">
+                                        <span class="manjian-icon">换购<i></i></span>
+                                        活动商品购满¥60.00，即可加价换购商品1件 >
+                                    </a>
+                                    <a class="huangou" href="">查看换购品</a>
+                                    <a class="coudan" href="">&nbsp;去凑单&nbsp;></a>
+                                </div>
+                            </div>
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                        <div class="GII-line"></div>
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">罗技（Logitech）G502 炫光自适应游戏鼠标 RGB鼠标</a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            尺码：RGB版
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥419.00</strong>
+                                        <a class="sales-promotion" href="">更多促销<i></i></a>
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥419.00</strong>
+                                        <span class="goods-weight">0.29kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item">
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                            <!--<div class="GII-line"></div>-->
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">不知道是什么型号的电脑 超薄 IPS高分1080屏幕 </a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            版本：i5+940m+512SSD
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥5999.00</strong>
+                                        <a class="sales-promotion" href="">促销优惠<i></i></a>
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥5999.00</strong>
+                                        <span class="goods-weight">8.29kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item">
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                            <!--<div class="GII-line"></div>-->
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">不知道是什么型号的电脑 超薄 IPS高分1080屏幕 </a>
+                                        </div>
+                                        <div class="goods-extend">
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+-->
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            版本：i5+940m+512SSD
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥6999.00</strong>
+                                        <a class="sales-promotion" href="">促销优惠<i></i></a>
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥6999.00</strong>
+                                        <span class="goods-weight">10.29kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item GI-first">
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                            <!--<div class="GII-line"></div>-->
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic7.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">不知道是什么的零食 填充字符填充字符填充字符填充字符填充字符 </a>
+                                        </div>
+                                        <div class="goods-extend">
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+-->
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+-->
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            尺码：单件-500g
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥50.00</strong>
+                                        <!--<a class="sales-promotion" href="">促销优惠<i></i></a>-->
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥50.00</strong>
+                                        <span class="goods-weight">0.60kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item GI-first">
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                            <!--<div class="GII-line"></div>-->
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">不知道是什么的水果 芒果--??国家 </a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+-->
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            尺码：单件-500g
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥50.00</strong>
+                                        <!--<a class="sales-promotion" href="">促销优惠<i></i></a>-->
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥50.00</strong>
+                                        <span class="goods-weight">0.60kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                单位店铺模块-->
+                <div class="cart-list-item">
+                    <div class="shop-title">
+                        <input class="CC-checkbox" type="checkbox">
+                        <a class="shop-name" href="">欢乐畅娱电玩游戏专营店</a>
+                        <a class="shop-contact" href=""></a>
+                        <div class="shop-freight">
+                            <div class="freight-info">已免运费</div>
+                        </div>
+                    </div>
+                    <div class="goods-list">
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item">
+                            <div class="GI-header">
+                                <div class="GIH-info">
+                                    <a href="">
+                                        <span class="manjian-icon">满减<i></i></span>
+                                        活动商品购满¥99.00， 即可享受满减 >
+                                    </a>
+                                    <a class="coudan" href="">&nbsp;去凑单&nbsp;></a>
+                                </div>
+                            </div>
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                        <div class="GII-line"></div>
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">索尼（SONY）【PS4国行游戏】最终幻想 15 Final Fantasy XV</a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+-->
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="【PS4游戏】最终幻想15普通版">
+                                            颜色：【PS4游戏】最终幻想15普通版
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥349.00</strong>
+                                        <!--<a class="sales-promotion" href="">更多促销<i></i></a>-->
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥349.00</strong>
+                                        <span class="goods-weight">0.29kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item GI-first">
+                            <div class="GI-header">
+                                <div class="GIH-info">
+                                    <a href="">
+                                        <span class="manjian-icon">换购<i></i></span>
+                                        活动商品购满¥60.00，即可加价换购商品1件 >
+                                    </a>
+                                    <a class="huangou" href="">查看换购品</a>
+                                    <a class="coudan" href="">&nbsp;去凑单&nbsp;></a>
+                                </div>
+                            </div>
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                        <div class="GII-line"></div>
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">罗技（Logitech）G502 炫光自适应游戏鼠标 RGB鼠标</a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            尺码：RGB版
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥419.00</strong>
+                                        <a class="sales-promotion" href="">更多促销<i></i></a>
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥419.00</strong>
+                                        <span class="goods-weight">0.29kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                    店铺中单位商品模块-->
+                        <div class="goods-item GI-first">
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                            <!--<div class="GII-line"></div>-->
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic8.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">不知道是什么的零食 填充字符填充字符填充字符填充字符填充字符 </a>
+                                        </div>
+                                        <div class="goods-extend">
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+-->
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+-->
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            尺码：单件-500g
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥50.00</strong>
+                                        <!--<a class="sales-promotion" href="">促销优惠<i></i></a>-->
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥50.00</strong>
+                                        <span class="goods-weight">0.60kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                       店铺中单位商品模块-->
+                        <div class="goods-item GI-first">
+                            <!--单品-->
+                            <div class="GI-item GII-first">
+                                <div class="GII-form clearfix">
+                                    <div class="GII-checkbox">
+                                       <div class="GII-container">
+                                           <input class="CC-checkbox" type="checkbox">
+                                            <!--<div class="GII-line"></div>-->
+                                       </div> 
+                                    </div>
+                                    <div class="GII-goods">
+                                        <div class="goods-pic">
+                                            <a href="">
+                                                <img src="img/goods-pic9.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="goods-name">
+                                            <a href="">不知道是什么的水果 芒果--??国家 </a>
+                                        </div>
+                                        <div class="goods-extend">
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买礼品包装</a>
+                                            </span>
+<!--
+                                            <span class="GE-item">
+                                                <i class="giftcard-icon"></i>
+                                                <a href="">购买增值保障</a>
+                                            </span>
+-->
+                                        </div>
+                                    </div>
+                                    <!--尺码，型号，颜色等-->
+                                    <div class="goods-type">
+                                        <div class="GT-text" title="RGB版">
+                                            尺码：单件-500g
+                                        </div>
+                                    </div>
+                                    <!--价格-->
+                                    <div class="goods-price">
+                                        <strong>¥50.00</strong>
+                                        <!--<a class="sales-promotion" href="">促销优惠<i></i></a>-->
+                                    </div>
+                                    <!--数量-->
+                                    <div class="goods-quantity">
+                                        <div class="quantity-form">
+                                            <a class="QF-" href="">-</a>
+                                            <input class="QF-num" type="text" value="1">
+                                            <a class="QF-plus" href="">+</a>
+                                        </div>
+                                        <div class="GQ-info">有货</div>
+                                    </div>
+                                    <!--小计-->
+                                    <div class="price-sum">
+                                        <strong>¥50.00</strong>
+                                        <span class="goods-weight">0.60kg</span>
+                                    </div>
+                                    <!--操作-->
+                                    <div class="GII-action">
+                                        <a href="">删除</a>
+                                        <a href="">移到我的关注</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--        购物车底部工具栏-->
+            <div class="bottom-bar clearfix">
+                <div class="chose-all">
+                    <input class="CC-checkbox" type="checkbox">
+                    全选
+                </div>
+                <div class="BA-action">
+                    <a href="">删除选中的商品</a>
+                    <a href="">移到我的关注</a>
+                    <a href="">清除下柜商品</a>
+                </div>
+                <div class="BA-right">
+                    <div class="pay-button">
+                        <a href=""></a>
+                    </div>
+                    <div class="BA-price">
+                        <span class="sum-text">总价：</span>
+                        <span class="sum">¥0.00</span>
+                        <i></i><br/>
+                        <span class="sum-text">已节省：</span>
+                        <span class="price-off">- ¥0.00</span>
+                    </div>
+                    <div class="quantity-sum">已选择
+                        <span>0</span>件商品
+                        <i></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+<!--        底部推荐模块-->
+       <div class="recommend-module">
+           <div class="RM-header">
+               <a class="RMH-item active" href="">猜你喜欢</a>
+               <a class="RMH-item" href="">我的关注</a>
+               <a class="RMH-item" href="">最近浏览</a>
+           </div>
+           <div class="RM-container">
+<!--              推荐内容区域-->
+               <div class="RM-content clearfix">
+                   <div class="RMC-1">
+                       <ul>
+<!--                          单位推荐的内容-->
+                           <li>
+                               <div class="RMC-pic"><a href=""><img src="img/RMC-pic1.jpg" alt=""></a></div>
+                               <div class="RMC-name">
+                                   <a href="">微软（Microsoft）Surface Pro 4 二合一平板电脑 12.3英寸（Intel i5 4G内存 128G存储 触控笔 ）</a>
+                               </div>
+                               <div class="RMC-price">
+                                   <span>￥6288.00</span>
+                               </div>
+                               <div class="add-button">
+                                   <a href=""><i></i>加入购物车</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="RMC-pic"><a href=""><img src="img/RMC-pic1.jpg" alt=""></a></div>
+                               <div class="RMC-name">
+                                   <a href="">微软（Microsoft）Surface Pro 4 二合一平板电脑 12.3英寸（Intel i5 4G内存 128G存储 触控笔 ）</a>
+                               </div>
+                               <div class="RMC-price">
+                                   <span>￥6288.00</span>
+                               </div>
+                               <div class="add-button">
+                                   <a href=""><i></i>加入购物车</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="RMC-pic"><a href=""><img src="img/RMC-pic1.jpg" alt=""></a></div>
+                               <div class="RMC-name">
+                                   <a href="">微软（Microsoft）Surface Pro 4 二合一平板电脑 12.3英寸（Intel i5 4G内存 128G存储 触控笔 ）</a>
+                               </div>
+                               <div class="RMC-price">
+                                   <span>￥6288.00</span>
+                               </div>
+                               <div class="add-button">
+                                   <a href=""><i></i>加入购物车</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="RMC-pic"><a href=""><img src="img/RMC-pic1.jpg" alt=""></a></div>
+                               <div class="RMC-name">
+                                   <a href="">微软（Microsoft）Surface Pro 4 二合一平板电脑 12.3英寸（Intel i5 4G内存 128G存储 触控笔 ）</a>
+                               </div>
+                               <div class="RMC-price">
+                                   <span>￥6288.00</span>
+                               </div>
+                               <div class="add-button">
+                                   <a href=""><i></i>加入购物车</a>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+<!--               操作箭头-->
+               <div class="RM-arrow">
+                   <a class="pre" href="">&lt;</a>
+                   <a class="next" href="">></a>
+               </div>
+<!--                此处为原网站的推荐模块滚动条，在此备份用于JS-->
+                <div class="goods-list-tab">
+                   <a href="#none" class="s-item active"></a><a href="#none" class="s-item"></a><a href="#none" class="s-item"></a>
+                </div>
+           </div>
+       </div>
+    </div>
+<!--    主内容结束-->
+<!--底部导航模块-->
+    <div class="bottom-guide">
+        <div class="BG-banner">
+            <img src="img/service_items_1.png" alt="">
+            <img src="img/service_items_2.png" alt="">
+            <img src="img/service_items_3.png" alt="">
+            <img src="img/service_items_4.png" alt="">
+        </div>
+        <div class="BG-container">
+            <ul class="BG-list-1"> 
+                <span class="BGL-title">购物指南</span>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">生活旅行/团购</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">大家电</a></li>
+                <li><a href="">联系客服</a></li>
+            </ul>
+            <ul class="BG-list-1"> 
+                <span class="BGL-title">购物指南</span>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">生活旅行/团购</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">大家电</a></li>
+                <li><a href="">联系客服</a></li>
+            </ul>
+            <ul class="BG-list-1"> 
+                <span class="BGL-title">购物指南</span>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">生活旅行/团购</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">大家电</a></li>
+                <li><a href="">联系客服</a></li>
+            </ul>
+            <ul class="BG-list-1"> 
+                <span class="BGL-title">购物指南</span>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">生活旅行/团购</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">大家电</a></li>
+                <li><a href="">联系客服</a></li>
+            </ul>
+            <ul class="BG-list-1 BG-list-5"> 
+                <span class="BGL-title">购物指南</span>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">生活旅行/团购</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">大家电</a></li>
+                <li><a href="">联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+<!--   底部信息模块-->
+    <footer>
+       <div class="footer-mask"></div>
+       <p>底部信息模块用不着，忽略</p>
+    </footer>
+</body>
+</html>

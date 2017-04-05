@@ -1,0 +1,1446 @@
+/*页面通用*/
+body{
+    font-size: 0.16rem;
+    font-family: 黑体;
+    min-width: 3.1rem;
+    background-color: #F0F0F0;
+}
+a{
+    text-decoration: none; 
+    color: #272727;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
+/*清除浮动*/
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+/*----------------------------------------*/
+/*“发现”主页*/
+/*搜索栏*/
+.search-header{
+    height: 1.5rem;
+    width: 100%;
+    background-color: #DA403A;
+    overflow: hidden;
+    position: fixed;
+}
+.header-placeholder{
+    height: 1.5rem;
+}
+.search-container{
+    overflow: hidden;
+    width: 10.25rem;
+    height: .84rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    margin: 0.3rem;
+    position: relative;
+    text-align: center;
+}
+.search-input{
+    display: inline-block;
+    width: 4.05rem;
+    height: 0.5rem;
+    margin: 0.15rem auto;
+    font-size: 0.4rem;
+    font-family: 黑体;
+    border: none;
+    outline: none;
+    padding-left: .55rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.search-icon{
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    position: absolute;
+    top: .25rem;
+    background: url(../img/search-icon.gif) no-repeat top;
+    background-size: cover;
+}
+.search-input:focus{
+    width: 9rem;
+}
+/*导航栏*/
+.found-guide{
+    height: 5.57rem;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.guide-line{
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+}
+.found-guide .guide-line .guide-item{
+    display: inline-block;
+    margin-top: 0.4rem;
+    text-align: center;
+    width: 2rem;
+    font-size: 0.32rem;
+    margin-left: 0.7rem;
+}
+.found-guide .guide-item:first-child{
+    margin-left: 0;
+}
+.found-guide .guide-item img{
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 0.2rem 0.2rem 0.32rem;
+}
+.item-name{
+    color: #858585;
+    font-size: 0.3rem;
+    display: inline-block;
+}
+/*主内容模块*/
+/*单位新闻模块样式*/
+.news-header{
+    height:0.8rem;
+    font-size:0.34rem;
+    line-height: 0.8rem;
+    text-indent: 0.3rem;
+    color: #6A6A6A;
+}
+.news-item{
+    overflow: hidden;
+    background-color: #FFFFFF;
+    padding: 0.4rem 0.4rem 0;
+}
+.news-title{
+    display: block;
+    font-size: .45rem;
+    margin-bottom: .4rem;
+}
+.news-gallery{
+    margin-bottom: .3rem;
+}
+.news-gallery li{
+    margin-right: 0.1rem;
+}
+.news-gallery li:last-child{
+    margin-right: 0;
+}
+.news-gallery img{
+    width: 3.16rem;
+    height: 2.3rem;
+}
+.news-status{
+    height: .9rem;
+    border-bottom: 1px solid #F5F5F5;
+    color: #9B9B9B;
+    font-size: .31rem
+}
+.comment-num,.view-num{
+    display: inline-block;
+    float: right;
+    padding-left: .3rem;
+}
+.comment-icon{
+    display: inline-block;
+    width: .6rem;
+    height: .28rem;
+    background: url(../img/comment-icon.gif) no-repeat center;
+    background-size: contain;
+}
+.view-icon{
+    display: inline-block;
+    width: .6rem;
+    height: .28rem;
+    background: url(../img/view-icon.gif) no-repeat center;
+    background-size: contain;
+}
+/*单图新闻样式*/
+.text-right{
+    float: left;
+    width: 6.45rem;
+    margin-top: .19rem;
+}
+.gallery-left{
+    float: left;
+    padding-bottom: .4rem;
+    padding-right: 0.09615rem;
+    border-bottom: 1px solid #F5F5F5;
+}
+/*底部主导航*/
+.main-guide-placeholder{
+    height: 1.54rem;
+}
+.main-guide{
+    height: 1.54rem;
+    line-height: 0.5rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    background-color: #F4F4F4;
+    border-top: 1px solid #D5D5D5;
+}
+.main-guide ul{
+    height: 1.15rem;
+    display: inline-block;
+    width: 9rem;
+    text-align: center;
+    margin-top: 0.22rem;
+}
+.main-guide ul li{
+    width: .9rem;
+    height: 1.1rem;
+    text-align: center;
+    margin-left: 1.8rem;
+}
+.main-guide ul li:first-child{
+    margin-left: 0;
+}
+.main-guide ul li img{
+    height: .7rem;
+    width: .7rem;
+}
+.main-guide ul li span{
+    font-size: .3rem;
+    color: #646464;
+}
+/*-----------------------------------------*/
+/*"我的"用户主页*/
+.user-info{
+    height: 3.5rem;
+    width: 100%;
+    background-color: #D23E37;
+    line-height: 3.5rem;
+}
+.user-head{
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.96rem;
+    height: 1.96rem;
+/*    float: left;*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 .45rem;
+    line-height: 1;
+}
+.user-head img{
+    width: 100%;
+    height: 100%;
+}
+.info-text{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+}
+.user-name{
+    font-size: .54rem;
+    color: white;
+    font-family: sans-serif
+}
+.user-level{
+    display: inline-block;
+    margin-top: .2rem;
+    border: 1px solid #DA7069;
+    border-radius: 1rem;
+    padding: .05rem .2rem;
+    font-size: .35rem;
+    color: white;
+    font-weight: 100;
+}
+.V1-icon{
+    font-weight: 600;
+}
+.info-arrow{
+    display: inline-block;
+    width: 1rem;
+    font-size: .678rem;
+    text-align: center;
+    float: right;
+    color: white;
+}
+/*用户导航*/
+.mine-guide{
+    height: 2.1rem;
+    background: #FFFFFF;
+    line-height: 2.1rem;
+    width: 100%;
+    border-bottom: 1px solid #E4E4E4;
+}
+.mine-guide ul{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
+    width: 100%;
+}
+.mine-guide ul a{
+    display: inline-block;
+}
+.mine-guide ul li{
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #F5F5F5;
+    line-height: .7rem;
+    font-size: .4rem;
+}
+.mine-guide ul li:last-child{
+    border-right: none;
+}
+.mine-guide ul li img{
+    height: .7rem;
+    margin-bottom: .1rem
+}
+/*单位选择项目样式*/
+.select-item{
+    padding-top: .4rem;
+    overflow: hidden;
+}
+.select-item li:first-child{
+    border-top: 1px solid #E4E4E4;
+}
+.select-line{
+    height: 1.4rem;
+    width: 100%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E4E4E4;
+    font-size: .47rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    text-indent: .38rem;
+    text-align: left;
+}
+.select-line a{
+    display: block;
+}
+.select-line a:active{
+    background-color: #ddd;
+}
+.select-line .right-text{
+    float: right;
+    color: #A5A5A5;
+    font-weight: normal;
+}
+.select-arrow{
+    display: inline-block;
+    width: 1rem;
+    font-size: .678rem;
+    float: right;
+    color: #A5A5A5;
+}
+.select-guide{
+    width: 100%;
+}
+.select-guide{
+    height: 1.9rem!important;
+}
+.select-guide li{
+    border: 0!important;
+}
+/*底部占位符*/
+.select-item:last-child{
+    content: '';
+    display: block;
+    height: 2.5rem;
+}
+/*--------------------------*/
+/*“影院”页面*/
+.cinema-header{
+    height: 1.5rem;
+    width: 100%;
+    background-color: #D33E37;
+    overflow: hidden;
+    position: fixed;
+    line-height: 1.5rem;
+    z-index: 30;
+}
+.location{
+    display: inline-block;
+    font-size: .45rem;
+    padding-left: .2rem;
+}
+.location a{
+    display: inline-block;
+    color: white;
+    height: 1rem;
+    width: 1.8rem;
+    position: absolute;
+    vertical-align: middle;
+    top: 0.25rem;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 10%;
+}
+.location a:active{
+    background-color: #b11e1e;
+}
+.location-arrow{
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/*根据字号居中，margin-left值与字号相同*/
+.cinema-title{
+    display: inline-block;
+    font-size: .56rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.56rem;
+}
+.cinema-search-icon{
+    display: inline-block;
+    width: .64rem;
+    height: 1.5rem;
+    float: right;
+    background: url(../img/cinema-search-icon.png) no-repeat center;
+    background-size: .64rem .58rem;
+    margin: 0 .5rem 0 .8rem;
+}
+.chose-icon{
+    display: inline-block;
+    width: .64rem;
+    height: 1.5rem;
+    float: right;
+    background: url(../img/chose-icon.gif) no-repeat center;
+    background-size: .64rem .58rem;
+}
+/*主内容区域*/
+.banner-pic{
+    width: 100%;
+    background: #FFFFFF;
+}
+.banner-pic a{
+    width: 100%;
+}
+.banner-pic img{
+    width: 100%;
+}
+.cinema-item{
+    padding-left: .4rem; 
+    background: #FFFFFF;
+}
+.cinema-item:active{
+    background: #ddd;
+}
+.cinema-content{
+    overflow: hidden;
+    border-bottom: 1px solid #D4D4D4;
+    padding: .2rem 0;
+    color: #989898;
+    font-size: .36rem;
+    line-height: .86rem;
+    position: relative;
+}
+.cinema-content span{
+    vertical-align: middle;
+}
+.cinema-name{
+    display: inline-block;
+    font-size: .5rem;
+    color: #1C1C1C;
+    vertical-align: middle;
+    max-width: 7rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cinema-price{
+    font-size: .4rem;
+    color: #F24C40;
+    vertical-align: middle;
+}
+.cinema-position span{
+    display: inline-block;
+    font-size: .4rem;
+    width: 8.6rem;
+    color: #A3A3A3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cinema-content ul{
+    display: block;
+    overflow: hidden;
+    line-height: 1;
+    padding-bottom: 0.1rem;
+}
+.cinema-content ul span{
+    display: inline-block;
+    margin-right: .1rem;
+    border-radius: 0.04rem;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    font-size: .3rem;
+}
+.label-small{
+    padding: 0 .06rem;
+    border: 1px solid #5099AA;
+    color: #5099AA;
+}
+.label-middle{
+    background: #87C7ED;
+    color: white;
+    border: 1px solid #87C7ED;
+    width: .8rem;
+}
+.label-large{
+    background: #FDB850;
+    color: white;
+    border: 1px solid #FDB850;
+    width: 1.08rem;
+}
+.sale-icon{
+    display: inline-block;
+    margin-right: .1rem;
+    border-radius: 0.04rem;
+    height: .4rem;
+    width: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    border: 1px solid #FE806F;
+    background: #FE806F;
+    color: white;
+    font-size: .25rem;
+}
+.cinema-distance{
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: .4rem;
+    top: 50%;
+    margin-top: -0.43rem;
+}
+/*底部定位模块*/
+.GPS-module{
+    position: fixed;
+    bottom: 1.8rem;
+    left: 50%;
+    margin-left: -5.1rem;
+    width: 10.2rem;
+    height: .85rem;
+    background: RGBa(238, 238, 238, 0.9);
+    border-radius: .2rem;
+    line-height: .85rem;
+}
+.GPS-module a{
+    display: block;
+}
+/*关于图片透明，css3可用opacity属性(1为不透明)。IE8 以及更早的版本支持替代的 filter 属性。例如：filter:Alpha(opacity=50)。*/
+.GPS-icon{
+    display: inline-block;
+    width: .45rem;
+    height: .48rem;
+    vertical-align: middle;
+    margin: 0 .15rem .06rem .4rem;
+    opacity: 0.8;
+    border-radius: 25%;
+}
+.GPS-module span{
+    vertical-align: middle;
+    font-size: .4rem;
+    color: #999999;
+}
+.GPS-update-icon{
+    display: inline-block;
+    width: .45rem;
+    height: .48rem;
+    position: absolute;
+    right: .35rem;
+    top: 50%;
+    margin-top: -0.24rem;
+    opacity: 0.8;
+}
+/*-----------------------------------------------*/
+/*热映电影页面*/
+/*顶部导航，基础样式与结构使用影院页面的cinema-header*/
+.movieOn-search-icon{
+    display: inline-block;
+    float: right;
+    width: 1.3rem;
+    height: 100%;
+    background: url(../img/movie-search-icon1.gif) no-repeat center;
+    background-size: .58rem .58rem;
+}
+.movieOn-search-icon:active{
+    background-color: #B31F19;
+}
+.movieOn-guide{
+    width: 5.8rem;
+    height: 1rem;
+    top: 50%;
+    margin:-0.5rem 0 0 -2.9rem;
+    text-align: center;
+    line-height: .9rem;
+    background: #B31F19;
+    border-radius: .15rem;
+    font-size: .43rem;
+}
+.movieOn-guide .MOG-item{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: .85rem;
+    width: 1.74rem;
+    height: .85rem;
+    margin: 0;
+    border-radius: .12rem;
+    color: #FFFFFF;
+}
+.movieOn-guide .active{
+    background-color: #FFFFFF;
+    color: #B31F19;
+}
+.movie-list{
+    overflow: hidden;
+    background: #FFFFFF;
+}
+/*单位电影展示模块*/
+.movie-item{
+    overflow: hidden;
+    border-bottom: 1px solid #E4E4E4;
+    background-color: #fff;
+}
+.movie-item dd{
+    padding: 0 .3rem;
+    vertical-align: middle;
+}
+.movie-item a{
+    display: inline-block;
+}
+.movie-item dd p:last-child{
+    border-bottom: 1px solid #E4E4E4;
+}
+.movie-item dd:last-child p:last-child{
+    border-bottom: 0;
+}
+.movie-info,.news-text{
+    margin-left: .3rem;
+    
+}
+
+.main-movie-line{
+    overflow: hidden;
+    position: relative;
+    line-height: .72rem;
+}
+.movie-poster{
+    display: inline-block;
+    float: left;
+    width: 1.93rem;
+    height: 2.7rem;
+    margin-top: .3rem;
+}
+.movie-poster img{
+    width: 100%;
+    height: 100%;
+}
+.movie-info{
+    float: left;
+    width: 7.6rem;
+    margin-top: .3rem;
+}
+.movie-info h2{
+    display: inline-block;
+    font-size: .5rem;
+    vertical-align: middle;
+}
+.movie-ver{
+    display: inline-block;
+    padding: 0 .14rem;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    border:1px solid #8AB6CE;
+    border-radius: .06rem;
+    background: #8AB6CE;
+    font-weight: 700;
+    font-size: .27rem;
+    color: #fff;
+    vertical-align: middle;
+}
+.Vimax{
+    padding-right: 0;
+    border: 0;
+}
+.v-imax{
+    display: inline-block;
+    padding-left:.1rem;
+    padding-right: .1rem;
+    background-color: white;
+    color: #8AB6CE;
+    border:1px solid #8AB6CE;
+    border-top-right-radius:0.06rem;
+    border-bottom-right-radius:0.06rem;
+    line-height: .38rem;
+    
+}
+.score-text{
+    font-size: .30rem!important;
+    color: #999999!important;
+}
+.movie-score{
+    font-size: .4rem;
+    color: #FFB200;
+    margin-left: .1rem;
+}
+.movie-info p{
+    font-size: .37rem;
+    color: #5E5E5E;
+}
+.movie-info p:last-child{
+    padding-bottom: .25rem;
+    margin-top: -0.15rem;
+}
+.buy-tickets{
+    display: inline-block;
+    font-size: .4rem;
+    height: .8rem;
+    padding: 0 .28rem;
+    text-align: center;
+    line-height: .8rem;
+    color: #EE442A;
+    border: 1.5px solid #EE442A;
+    border-radius: .1rem;
+    position: absolute;
+    right: .3rem;
+    top: 50%;
+    margin-top: -.4rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.buy-tickets:active{
+    background-color: #EE442A;
+    color: #fff;
+}
+.news-line p{
+    line-height:1.1rem ;
+}
+.news-icon{
+    font-size: .3rem;
+    padding: .1rem;
+    border-radius: .1rem;
+    color: #FF9900;
+    border: 1px solid #FF9900;
+}
+.news-icon{
+    margin-left: 1rem;
+}
+.news-text{
+    font-size: .4rem;
+    width: 7.6rem;
+    color: #656565;
+}
+/*------------------------------------*/
+/*"待映页面"*/
+.MoviePage-SearchHeader{
+    position: relative!important;
+    background-color: #D33E37;;
+}
+.MoviePage-NewsHeader{
+    color: #171717;
+    font-weight: 700;
+}
+.MoviePage-gallery li{
+    position: relative;
+    margin-right: .1rem;
+}
+.MoviePage-gallery .pic-mask{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: url(../img/pic-mask.png) no-repeat;
+    background-size: cover;
+    z-index: 10;
+    line-height: .42rem;
+}
+.pic-mask .video-title{
+    display: inline-block;
+    width: 2.5rem;
+    font-size: .36rem;
+    color: #fff;
+    font-weight: normal;
+    text-indent: .1rem;
+    margin-top: .3rem;
+}
+.pic-mask .video-info{
+    display: inline-block;
+    width: 2.4rem;
+    font-size: .23rem;
+    color: #fff;
+    font-weight: normal;
+    text-indent: 0.05rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+.play-arrow{
+    display: inline-block;
+    position: absolute;
+    right: .05rem;
+    bottom: .1rem;
+    font-size: .6rem;
+    font-family: ;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: .1rem .16rem;
+    background-color: RGBa(2, 2, 2, 0.5)
+}
+/*为滚动横幅预留样式*/
+.video-item{
+    position: relative;
+    height: 2.6rem;
+}
+.MoviePage-gallery{
+    position: absolute;
+    width: 20rem;
+/*    overflow-x: scroll;*/
+}
+/*待映电影列表*/
+.WishMovie-list{
+    height: 5.6rem;
+}
+.WishMovie-list li{
+    margin-right: .25rem;
+}
+.WishMovie-list h1{
+    font-size: .4rem;
+    line-height: .7rem;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+.WishMovie-list img{
+    height: 3.5rem;
+    width: 2.5rem;
+}
+.wish-pic-container{
+    position: relative;
+}
+.pic-mask-like{
+    position: absolute;
+    top: 0;
+    width: .9rem;
+    height: .9rem;
+    background-color: RGBa(177, 179, 177, .5);
+    z-index: 10;
+    line-height: .42rem;
+}
+.pic-mask-like .play-arrow{
+    background-color: transparent;
+}
+.WishMovie-name{
+    display: block;
+    font-size: .4rem;
+    width: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: .6rem;
+    margin-top: .2rem;
+}
+.Wish-people{
+    font-size: .3rem;
+    color: #959595;
+}
+/*底部电影列表*/
+.presale{
+    color: #029AED;
+    border-color: #029AED;
+}
+.WishMovie-line dd p{
+    width: 6rem;
+    padding-right: 1.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dianyin{
+    color: #fff;
+    background-color: #FAB421;
+    border-color: #FAB421;
+    padding: 0 .1rem;
+}
+/*---------------------------------------------*/
+/*“电影详情”页面*/
+.details-header{
+    height: 7.9rem;
+    position: relative;
+}
+.BG-mask{
+    height: 7.1rem;
+    background-color: #40454d;
+    opacity: .55;
+    padding: .4rem;
+    overflow: hidden;
+}
+.BG-img{
+    filter: blur(.3rem);
+    -webkit-filter: blur(.3rem);1
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: url(../img/details-poster1.jpg) no-repeat;
+    background-size: cover;
+    background-position:0 40%;
+    overflow: hidden;
+}
+.back-arrow{
+    position: absolute;
+    left: 0.4rem;
+    top: .4rem;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+}
+.back-arrow-line{
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    left: 0.15rem;
+    top: .375rem;
+    padding: 0rem .32rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border .2s;
+}
+.back-arrow-line:active{
+    border: 2px solid #fff;
+}
+.share-icon{
+    display: inline-block;
+    position: absolute;
+    right: .4rem;
+    top: .6rem;
+    width: .95rem;
+    height: .95rem;
+    background: url(../img/avatar.png) no-repeat center;
+    background-size: cover;
+    transition: transform .1s
+}
+.share-icon:active{
+    transform:scale(1.2);
+}
+.movie-cover{
+    position: absolute;
+    bottom: 1.4rem;
+    left: .4rem;
+    height: 4.5rem;
+    width: 3.3rem;
+    border: 2px solid #fff;
+}
+.movie-cover img{
+    width: 100%;
+    height: 100%;
+}
+.details-header-info{
+    display: inline-block;
+    position: absolute;
+    left: 4.2rem;
+    top: 2rem;
+    line-height: .61rem;
+}
+.details-header-info p{
+    color: #C8C5C0;
+    font-size: .35rem;
+}
+.details-header-info h3{
+    font-size: .5rem;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 6rem;
+}
+.details-header-info .subtitle{
+    font-size: .3rem;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 6rem;
+}
+/*“星级条”样式*/
+.score-star .half-star{
+    display: inline-block;
+    width: .2rem;
+    height: .4rem;    
+}
+.score-star .half-star.left{
+    margin-left: .02rem;
+    background: url(../img/half-star-dark.png)  no-repeat;
+    background-size: cover;
+}
+.score-star .half-star.left.active{
+    background: url(../img/half-star.png)  no-repeat;
+    background-size: cover;
+}
+.score-star .half-star.right{
+    margin-right: .02rem;
+    background: url(../img/half-star-right-dark.png)  no-repeat;
+    background-size: cover;
+}
+.score-star .half-star.right.active{
+    background:url(../img/half-star-right.png)  no-repeat;
+    background-size: cover;
+}
+.score-star .socre{
+    font-size: .4rem;
+    color: #FEC700;
+    margin-left: .15rem
+}
+.details-header-info .socre-people{
+    font-size: .3rem;
+}
+.header-ver{
+    display: inline-block;
+    padding: 0 .2rem;
+    border-radius: .1rem;
+    background-color: #857B77;
+    font-weight: 700;
+    line-height: .5rem;
+}
+.wish-button, .score-button{
+    display: inline-block;
+    width: 4.64rem;
+    height: .9rem;
+    line-height: .9rem; 
+    border-radius: .1rem;
+    text-align: center;
+    background: -webkit-linear-gradient(top,RGBa(247, 247, 247, .3),RGBa(222, 222, 222, .3));
+    background: linear-gradient(to bottom,RGBa(247, 247, 247, .3),RGBa(222, 222, 222, .3));
+    border: 1px solid rgba(222, 222, 222, .2);
+    font-size: .4rem;
+    color: #EEECEB;
+    transition: all .2s;
+}
+.wish-button:active, .score-button:active{
+    background: -webkit-linear-gradient(top,RGBa(222, 222, 222, .3),RGBa(247, 247, 247, .3));
+    background: linear-gradient(to bottom,RGBa(222, 222, 222, .3),RGBa(247, 247, 247, .3));
+}
+.wish-button{
+    position: absolute;
+    bottom: .25rem;
+    left: .4rem;
+}
+.score-button{
+    position: absolute;
+    bottom: .25rem;
+    right: .4rem;
+}
+.wish-button i{
+    display: inline-block;
+    background: url(../img/wish-icon.png) no-repeat;
+    height: .32rem;
+    width: .33rem;
+    background-size: cover;
+}
+.score-button i{
+    display: inline-block;
+    background: url(../img/score-button-icon.png) no-repeat;
+    height: .32rem;
+    width: .33rem;
+    background-size: cover;
+}
+/*点击展开需要用到js*/
+.movie-summary{
+    text-align: center;
+    cursor: pointer;
+    background: #FFFFFF;
+    margin-bottom: .5rem;
+}
+.summary-short{
+    padding: .4rem;
+    padding-bottom: 0;
+    font-size: .45rem;
+    line-height: .72rem;
+    text-align: left;
+    overflow: hidden;
+}
+.summary-arrow{
+    width: 100%;
+}
+.summary-arrow span{
+    display: inline-block;
+    height: .7rem;
+    text-align: center;
+    font-size: .7rem;
+    transform: rotate(-90deg);
+    color: #A5A5A5;
+    font-weight: 700;
+}
+/*演职人员*/
+.staff{
+    overflow: hidden;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin: .2rem 0;
+    background: #fff;
+    text-align: center;
+}
+.staff-pic{
+    width: 200%;
+    padding: .4rem 0 .1rem .4rem;
+/*    overflow-x: scroll;*/
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E5E5E5;
+    height: 4.8rem;
+    
+}
+.staff-pic img{
+    height: 3rem;
+    margin: .1rem;
+}
+.staff-pic li:first-child img{
+    margin-right: .2rem;
+    border-bottom: 1px solid #979797;
+}
+.staff-name,.staff-role{
+    width: 2rem;
+    display: block;
+    font-size: .4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: black;
+}
+.staff-role{
+    color: #999; 
+    font-size: .3rem;
+}
+.details-select-line{
+    text-align: left;
+}
+/*底部购票横幅*/
+.BuyTicket-footer{
+    background-color: #F04D41;
+    position: fixed;
+    bottom: 0;
+    height: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+.BuyTicket-footer:after{
+    content: '';
+    display: block;
+    height: 1.5rem;
+}
+.BuyTicket-footer a{
+    display: block;
+    font-size: .5rem;
+    line-height: 1.5rem;
+    color: white;
+}
+.BuyTicketFooter-placeholder{
+    height: 1.5rem;
+}
+/*---------------------------------*/
+/*影院详情页面*/
+.CD-header{
+    height: 1.5rem;
+    width: 100%;
+    background: #DA403A;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    vertical-align: middle;
+    line-height: 1.5rem;
+}
+.left-arrow-back{
+    display: inline-block;
+    height: .7rem;
+    width: .6rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+    background: url(../img/left-arrow.gif) no-repeat;
+    background-size: cover;
+}
+.header-CinemaName{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: .7rem;
+    height: .7rem;
+    font-size: .55rem;
+    color: white;
+    padding-left: .5rem;
+    border-left: 1px solid #A72720;
+}
+.cellection-icon{
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    float: right;
+    margin: .4rem;
+    background: url(../img/cellection-icon.gif) no-repeat;
+    background-size: cover;
+}
+.CD-details-banner{
+    padding: .4rem .4rem 0;
+    background: #FFFFFF;
+    line-height: .6rem;
+}
+.CD-details-banner span{
+    vertical-align: middle;
+    font-size: .45rem;
+}
+.CD-details-banner ul{
+    margin-top: .1rem;
+}
+.map-button{
+    display: inline-block;
+    height: 1.6rem;
+    width: 1.8rem;
+    text-align: center;
+    line-height: .7rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -.8rem;
+    border-left: 1px solid #E7E7E7;
+}
+.map-button img{
+    width: .42rem;
+    height: .47rem;
+}
+.arrow-icon{
+    position: absolute;
+    right: 2.2rem;
+    top: 50%;
+    margin-top: -.3rem;
+    color: #E7E7E7;
+}
+.button-line{
+    background: #fff;
+    font-size: .4rem;
+    color: #7B7B7B;
+    text-align: center;
+    padding: .4rem 0;
+}
+.CD-sale-button1,.CD-sale-button2{
+    width: 5rem;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    vertical-align: middle;
+}
+.CD-sale-button1{
+    border-right: 1px solid #D4D4D4;
+    vertical-align: middle;
+}
+.CD-sale-button1 i{
+    display: inline-block;
+    width: .6rem;
+    height: .4rem;
+    background: url(../img/sale-button1.gif) no-repeat;
+    background-size: .6rem .48rem;
+    vertical-align: middle;
+    padding-bottom: .2rem;
+}
+.CD-sale-button2 i{
+    display: inline-block;
+    width: .43rem;
+    height: .48rem;
+    background: url(../img/sale-button2.gif) no-repeat;
+    background-size: .43rem .48rem;
+    vertical-align: middle;
+    padding-top: .1rem
+}
+/*影片展示横幅*/
+.movie-banner{
+    height: 4.6rem;
+    position: relative;
+    overflow: hidden;
+}
+.banner-mask{
+    height: 4.6rem;
+    background-color: #40454d;
+    opacity: .45;
+    overflow: hidden;
+}
+.banner-bg{
+    filter: blur(.3rem);
+    -webkit-filter: blur(.3rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: url(../img/wish-poster5.jpg) no-repeat;
+    background-size: cover;
+    background-position:0 40%;
+    overflow: hidden;
+}
+/*小三角*/
+.chose-arrow{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    bottom: 0;
+    border-bottom: .25rem solid #fff;
+    border-left: .25rem solid transparent;
+    border-right: .25rem solid transparent;
+    border-top: none;
+}
+/*电影横幅列表*/
+.banner-MovieList{
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.6rem;
+    left: 50%;
+    margin-left: -1.15rem;
+}
+.banner-MovieList li{
+    height: 3.2rem;
+    width: 2.3rem;
+    margin-right: .8rem;
+}  
+.banner-MovieList .active img{
+    transform: scale(1.2);
+    border: 1px solid #FFFFFF;
+}
+.banner-MovieList img{
+    height: 3.2rem;
+    width: 2.3rem;
+}
+.banner-info-line{
+    background: #fff;
+    overflow: hidden;
+    padding: .4rem 0 .2rem .4rem;
+    line-height: .5rem;
+    margin-bottom: .5rem;
+}
+.banner-info-line h1{
+    display: inline-block;
+    font-size: .45rem;
+    
+}
+.banner-info-line span{
+    font-size: .45rem
+}
+.banner-info-line p{
+    font-size: .37rem;
+    color: #9E9E9E;
+}
+.banner-info-line a{
+    display: block;
+}
+.CD-select-arrow{
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: .9rem!important;
+}
+/*底部电影列表*/
+.sale-info{
+    height: 0.25rem;
+    line-height: 0.25rem;
+    padding: .4rem 0 .4rem .4rem;
+    background: #FEF2C9;
+    color: #FAA21F;
+    font-size: .4rem;
+    position: relative;
+    overflow: hidden;
+}
+.sale-info p{
+    display: inline-block;
+}
+.sale-info .CD-select-arrow{
+    line-height: .2rem;
+    color: #FAA21F;
+}
+.arrow-text{
+    display: inline-block;
+    float: right;
+    font-size: .4rem;
+    line-height: 1rem;
+    position: absolute;
+    top: 0;
+    right: .7rem;
+}
+.CD-select-item-s{
+    background: #fff;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    overflow: hidden;
+    border-bottom: 1px solid #EDEDED;
+}
+.movie-date{
+    display: inline-block;
+    padding: 0 .4rem;
+    line-height: 1.4rem;
+    border-bottom: 4px solid #D74443;
+    font-size: .5rem;
+    color: #D74443;
+}
+.CD-select-item-m{
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #E4E4E4;
+    padding: .4rem;
+    position: relative;
+    line-height: .63rem;
+    vertical-align: middle;
+}
+.CD-buy-tickets{
+    transform: scale(.85)
+}
+.CD-select-item-m .time,.CD-select-item-m .ver,.CD-select-item-m .price{
+    display: inline-block;
+    width: 1.8rem;
+    vertical-align: middle;
+}
+.CD-select-item-m .time p:first-child{
+    font-size: .6rem;
+    font-weight: 600;
+  
+}
+.CD-select-item-m .time p:nth-child(2){
+    color: #A2A2A2;
+    font-size: .32rem;
+}
+.CD-select-item-m .ver p:first-child{
+    font-size: .3rem;
+    font-weight: 600;
+
+}
+.CD-select-item-m .ver p:nth-child(2){
+    font-size: .3rem;
+    color: #909090;
+    margin-top: -.2rem;
+}
+.CD-select-item-m .price{
+    position: absolute;
+    right: 3rem;
+    text-align: right;
+}
+.CD-select-item-m .price p:first-child{
+    color: #D74343;
+    font-size: .25rem
+}
+.CD-select-item-m .price p:first-child span{
+    font-size: .8rem
+}
+.CD-select-item-m .price p:last-child{
+    color: #F99D17;
+    font-size: .27rem
+}

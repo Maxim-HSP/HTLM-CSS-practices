@@ -1,0 +1,1160 @@
+body{
+    font: 12px/150% Arial,Verdana;
+    color: #666;
+    background: #fff;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+li{
+    float: left;
+    display: inline-block; 
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    color: #C81623;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/*-------------------------------------------*/
+.shortcut{
+    width: 100%;
+    min-width: 990px;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+.top-guide{
+    background: #F1F1F1;
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+/*城市选择模块*/
+.location{
+    float: left;
+    height: 30px;
+    padding-right: 2px;
+    position: relative;
+    z-index: 16;
+}
+.location .city{
+    padding: 0 25px 0 10px;
+    position: relative;
+    z-index: 20;
+}
+.location:hover .city{
+    background: #fff;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+/*顶部导航栏-小箭头*/
+.guide-arrow{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    height: 7px;
+    overflow: hidden;
+    font: 400 15px/15px consolas;
+    color: #6A6A6A;
+    transition: transform .1s ease-in 0s;
+    -webkit-transition: -webkit-transform .1s ease-in 0s;
+}
+/*此处定义移上鼠标的是哪个父级元素，推荐同一使用区域使用相同的父级class*/
+.location:hover .guide-arrow{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.guide-arrow s{
+    position: relative;
+    top: -7px;
+    text-decoration: none;
+}
+
+/*城市列表样式*/
+.city-list{
+    display: none;
+    width: 301px;
+    padding: 10px 0 10px 10px;
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.location:hover .city-list{
+    display: block;
+}
+.city-list li{
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+.city-list li a{
+    float: left;
+    padding: 0 8px;
+}
+.city-list li a:hover{
+    background: #F4F4F4;
+}
+/*顶部右导航栏*/
+.TR-guide{
+    float: right;
+}
+/*此处加入position供下拉栏定位*/
+.TR-guide li{
+    padding: 0 10px;
+    position: relative;
+}
+.TR-guide li.spacer{
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+.link-login{
+    font-family: "verdana,simsun"; 
+}
+.link-regist{
+    color: #C81623;
+}
+/*统一定义hover下拉栏和下拉导航块背景色*/
+.DropBar{
+    position: relative;
+    z-index: 15;
+    margin: 0 -9px;
+    padding-left: 8px;
+    border: 1px solid transparent;
+    border-top: 0;
+    border-bottom: 1px solid transparent;
+    padding-right: 25px!important;
+}
+.TR-guide li:hover .DropBar{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-bottom: 1px solid #fff;
+}
+.TR-guide li:hover .guide-arrow{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.Drop-content{
+    width: 280px;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 1px;
+    background: #fff;
+    border: 1px solid #ddd;
+    display: none;
+}
+.TR-guide li:hover .Drop-content{
+    display: block;
+}
+.Drop-content li{
+    width: 265px;
+    padding: 5px 0 5px 15px;
+    overflow: hidden;
+}
+/*</导航栏hover下拉栏模块>*/
+.phone-icon{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 15px;
+    height: 20px;
+    margin-bottom: 1px;
+    background: url(img/jd2015img.png) 0 0 no-repeat;
+}
+.TR-guide li:hover .phone-icon{
+    background-position: 0 -25px;
+}
+.qr-icon{
+    width: 82px!important;
+    padding-bottom: 8px;
+}
+.qr-icon li{
+    width: 82px!important;
+    margin: 0;
+    padding: 0;
+        line-height: 24px;
+}
+.qr-icon img{
+    border: 0;
+    vertical-align: middle;
+}
+.DC-service{
+    width: 167px;
+    margin: 0;
+}
+.DC-service li{
+    width: 167px;
+    margin: 0;
+}
+.Drop-content-right{
+    width: 280px;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 1px;
+    background: #fff;
+    border: 1px solid #ddd;
+    display: none;
+}
+.TR-guide li:hover .Drop-content-right{
+    display: block;
+}
+.Drop-content-right li{
+    width: 265px;
+    padding: 5px 0 5px 15px;
+    overflow: hidden;
+}
+/*头部--logo和搜索框*/
+.page-header{
+    width: 990px;
+    margin: 0 auto;
+    padding: 15px 0 10px;
+}
+.logo-area{
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 60px;
+}
+.logo-icon{
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    background: url(img/logo-201305.png) no-repeat 0 0;
+    text-indent: -20000px;
+}
+
+.cart-icon{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 8px;
+    right: 0;
+    background: url(img/cart-icon.png) no-repeat;
+    background-color: #fff;
+}
+.search-area{
+    float: right;
+    border: 2px solid #c91623;
+    background: #c91623;
+    height: 24px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.search-input{
+    border: 0;
+    height: 18px;
+    line-height: 18px;
+    width: 260px;
+    padding: 3px 5px;
+    outline: 0;
+}
+.search-button{
+    display: inline-block;
+    vertical-align: top;
+    width: 48px;
+    height: 24px;
+    background: #c91623;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+/*主内容区域*/
+.main-container{
+    width: 990px;
+    margin: 0 auto;
+}
+/*商品位置选择区域，选择线*/
+.cart-header{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.cart-chose{
+    float: left;
+    position: relative;
+    height: 26px;
+    overflow: hidden;
+}
+.chose-item{
+    float: left;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 0 10px;
+    cursor: pointer;
+    margin: 5px 30px 0 0;
+}
+.chose-item a{
+    color: #333;
+}
+.chose-item.active a{
+    color: #e4393c;
+}
+.cart-location{
+    float: right;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 10px;
+    padding-left: 122px;
+}
+.cart-location span{
+    float: left;
+    line-height: 26px;
+}
+.CL-form{
+    position: relative;
+    z-index: 10;
+    float: left;
+    height: 26px;
+    cursor: default;
+    margin: 0;
+}
+.CLF-text-wrap{
+    float: left;
+    position: relative;
+    z-index: 12;
+    top: 0;
+    height: 23px;
+    border: 1px solid #CECBCE;
+    background: #fff;
+    padding: 0 20px 0 4px;
+    line-height: 23px;
+    overflow: hidden;
+}
+.CLF-arrow{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 24px;
+    background: url(img/area_arrow.png) 0 0 no-repeat;
+    overflow: hidden;
+}
+.CLF-list{
+    width: 420px;
+    right: 0;
+    float: left;
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    border: 1px solid #CECBCE;
+    width: 390px;
+    padding: 15px;
+    background: #fff;
+    -moz-box-shadow: 0 0 5px #ddd;
+    -webkit-box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 0 5px #ddd;
+    display: none;
+}
+.CL-form:hover .CLF-text-wrap{
+    padding-bottom: 1px;
+    border-bottom: 1px solid #fff;
+}
+.CL-form:hover .CLF-list{
+    display: block;
+}
+.chose-line{
+    position: relative;
+    height: 1px;
+    background: #e0e0e0;
+}
+.chose-bar{
+    width: 80px;
+    left: 0px;
+    position: absolute;
+    height: 2px;
+    background: #e4393c;
+    overflow: hidden;
+}
+/*购物车主内容*/
+.cart-container{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.CC-header{
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0 10px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+}
+.CCH-item{
+    float: left;
+    line-height: 32px;
+    width: 112px;
+    padding-left: 11px;
+}
+.CC-checkbox{
+    float: none;
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
+.CCH-price{
+    margin-left: 360px;
+}
+.CCH-quantity{
+    padding-left: 0;
+    margin-left: -10px;
+}
+.CCH-sum{
+    width: auto;
+}
+.CCH-action{
+    width: auto;
+    padding-left: 0;
+    margin-left: 40px;
+}
+/*购物车店铺、商品列表*/
+.cart-list-item{
+    margin-bottom: 20px;
+}
+.cart-list{
+    margin-bottom: 20px;
+}
+.shop-title{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 11px;
+    font-weight: 700;
+}
+.shop-name{
+    display: inline-block;
+    max-width: 210px;
+    overflow: hidden;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+}
+.JDSelf{
+    background: url(img/cart-icons-new.png) 0 -177px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 54px;
+    height: 18px;
+    overflow: hidden;
+    color: #e4393c;
+}
+.shop-contact{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/cart-icons-new.png) -84px -67px;
+    width: 16px;
+    height: 16px;
+    line-height: 100px;
+    overflow: hidden;
+    margin: 0 0 0 10px;
+    
+}
+.shop-freight{
+    float: right;
+    font-weight: 400; 
+}
+.freight-info{
+    color: #666;
+    line-height: 26px;
+    height: 26px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.goods-list{
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    border-color: #aaa #f1f1f1 #f1f1f1;
+    background: #fff;
+}
+.goods-item{
+    margin-bottom: 10px;
+}
+.GI-first{
+    border-top: 1px solid #c5c5c5;
+}
+/*满减*/
+.GI-header{
+    position: relative;
+    z-index: 2;
+    height: 26px;
+    padding: 5px 10px;
+    line-height: 26px;
+    color: #999;
+    display: inline-block;
+}
+.GIH-info{
+    width: 750px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.manjian-icon{
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #f48719;
+    color: #f48719;
+    padding: 1px 10px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 10px 0 5px;
+    vertical-align: middle;
+}
+.manjian-icon i{
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 6px;
+    left: -1px;
+    border: 0;
+    bottom: -5px;
+    background: url(img/cart-line-02.png) 0 -7px no-repeat;
+    overflow: hidden;
+}
+.GIH-info .huangou{
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    padding: 0 7px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: linear-gradient(to top,#e74649 0,#df3134 100%);
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    float: none;
+    margin-left: 20px;
+}
+.coudan{
+    color: #333;
+}
+.GI-item{
+    position: relative;
+    padding: 0 10px 1px 40px;
+    line-height: 20px;
+    border-top: 1px solid #c5c5c5;
+}
+.GII-first{
+    border: 0;
+}
+.GII-form{
+    border-top: 1px solid #f1f1f1;
+}
+.GII-checkbox{
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+    top: 0;
+    width: 30px;
+    min-height: 10px;
+    float: left;
+    padding: 15px 0 10px;
+}
+.GII-container{
+    position: relative;
+    z-index: 3;
+    float: left;
+    margin-right: 5px;
+}
+.GII-line{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -17px;
+    left: 5px;
+    height: 25px;
+    width: 1px;
+    background: url(img/cart-line-02.png) -9px -2px repeat-y;
+}
+.GII-goods{
+    width: 300px;
+    float: left;
+    padding: 15px 0 10px;
+}
+.goods-pic{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+    margin-right: 10px;
+    background: #fff;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.goods-pic img{
+    width: 100%;
+}
+.goods-name{
+    height: 40px;
+    overflow: hidden;
+}
+.goods-name a{
+    color: #333;
+}
+.goods-name a:hover{
+    color: #e4393c;
+}
+.goods-extend{
+    margin-top: 2px;
+}
+.GE-item{
+    margin: 0 10px 0 0;
+    display: block;
+    min-height: 18px;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+.giftcard-icon{
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url(//misc.360buyimg.com/user/cart/css/i/cart-icons-new.png) no-repeat;
+    background-position: -27px -23px;
+}
+.goods-extend a{
+    padding: 1px 4px 0 7px;
+    height: 15px;
+    line-height: 15px;
+    color: #aaa;
+}
+.goods-extend a:hover{
+    color: #C81623;
+}
+.goods-type{
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 15px 10px 0;
+}
+.GT-text{ 
+    width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: default;
+}
+.goods-price{
+    display: inline-block;
+    width: 120px;
+    font-family: verdana;
+    text-align: right;
+    float: left;
+    padding: 15px 40px 0 0;
+}
+.goods-price strong{
+    display: block;
+    color: #333;
+    font-weight: 400;
+}
+.sales-promotion{
+    display: inline-block;
+    width: 53px;
+    border: 1px solid #f9d2d3;
+    color: #e4393c;
+    height: 18px;
+    text-align: left;
+    line-height: 17px;
+    padding: 0 15px 0 8px;
+    cursor: pointer;
+    background: #fff;
+    text-decoration: none;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+.goods-price i{
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 7px;
+    height: 4px;
+    margin-left: 5px;
+    overflow: hidden;
+    background: url(img/cart-icons-new.png) -82px -3px no-repeat;
+}
+.goods-quantity{
+    width: 80px;
+    float: left;
+    padding: 15px 0 10px;
+}
+.quantity-form{
+    position: relative;
+    overflow: hidden;
+    height: 22px;
+    width: 80px;
+}
+.quantity-form .QF-{
+    cursor: default;
+    color: #e9e9e9;
+    border: 1px solid #cacbcb;
+    border-right: 0;
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 0;
+    width: 16px;
+    text-align: center;
+    margin: 0;
+    background: #fff;
+    float: left;
+}
+.QF-num{
+    position: absolute;
+    left: 17px;
+    top: 0;
+    border: 1px solid #cacbcb;
+    width: 42px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+}
+.quantity-form .QF-plus{
+    float: right;
+    border: 1px solid #cacbcb;
+    border-left: 0;
+    color: #666;
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 0;
+    width: 16px;
+    text-align: center;
+    margin: 0;
+}
+.GQ-info{
+    color: #aaa;
+    text-align: center;
+}
+.price-sum{
+    width: 100px;
+    padding-right: 40px;
+    text-align: right;
+    font-family: verdana;
+    float: left;
+    padding: 15px 40px 10px 0;
+}
+.price-sum strong{
+    color: #333;
+    font-weight: 700;
+    display: block;
+}
+.GII-action{
+    width: 75px;
+    float: left;
+    padding: 15px 0 10px;
+}
+.GII-action a{
+    color: #666;
+    display: block; 
+}
+.GII-action a:hover{
+    color: #e4393c
+}
+/*购物车底部结算栏*/
+.bottom-bar{
+    width: 988px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    position: relative;
+}
+.chose-all{
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 16px 0 16px 9px;
+    white-space: nowrap;
+}
+.BA-action{
+    float: left;
+    height: 50px;
+    width: 310px;
+    line-height: 50px;
+}
+.BA-action a{
+    float: left;
+    margin-left: 10px;
+    color: #666;
+}
+.BA-action a:hover{
+    color: #e4393c;
+}
+.BA-right{
+    position: absolute;
+    height: 52px;
+    right: 0;
+    top: -1px;
+    width: 610px;
+}
+.pay-button{
+    float: right;
+}
+.pay-button a{
+    display: inline-block;
+    width: 96px;
+    height: 52px;
+    overflow: hidden;
+    background: url(img/cart-submit-btn.png) 0 0 no-repeat;
+}
+.BA-price{
+    float: right;
+    height: 43px;
+    line-height: 20px;
+    margin: 7px 20px 0 10px;
+    color: #666;
+    width: auto;
+    position: relative;
+}
+.BA-price .sum-text{
+    width: 50px;
+    float: left;
+    text-align: right;
+    color: #999;
+}
+.BA-price .sum{
+    display: inline-block;
+    text-align: right;
+    font-family: verdana;
+    font-size: 16px;
+    color: #e4393c;
+    font-weight: 700;
+}
+.BA-price i{
+    vertical-align: text-bottom;
+    display: inline-block;
+    height: 18px;
+    width: 12px;
+    background: url(img/price-tips.png) 0 0 no-repeat;
+    margin-left: 5px;
+}
+.BA-price  .price-off{
+    display: inline-block;
+    text-align: right;
+    font-family: verdana;
+    color: #666;
+}
+.quantity-sum{
+    float: right;
+    color: #999;
+    height: 44px;
+    line-height: 20px;
+    margin: 7px 0 0;
+    cursor: pointer;
+}
+.quantity-sum span{
+    color: #e4393c;
+    font-family: verdana;
+    font-weight: 700;
+    margin: 0 3px;
+}
+.quantity-sum i{
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    background: url(img/cart-icons-new.png) -45px -91px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: -5px 0 0 5px;
+    -webkit-transition: all .2s ease-in 0s;
+    -moz-transition: all .2s ease-in 0s;
+    transition: all .2s ease-in 0s;
+}
+/*底部推荐模块*/
+.recommend-module{
+    overflow: visible;
+    margin-bottom: 10px;
+}
+.RM-header{
+    margin-bottom: 10px;
+}
+.RM-header .RMH-item{
+    display: inline-block;
+    margin-right: 35px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+}
+.RMH-item.active{
+    color: #e4393c;
+    font-weight: 700;
+    border-color: #e4393c;
+}
+/*推荐模块主内容*/
+.RM-container{
+    position: relative;
+    overflow: visible;
+    height: 326px;
+}
+
+/*此处为原网站的推荐模块滚动条，在此备份用于JS*/
+.goods-list-tab {
+    position: absolute;
+    right: 0;
+    top: -26px;
+    width: 52px;
+}
+.goods-list-tab .s-item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    overflow: hidden;
+    background: #aaa;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.goods-list-tab .active {
+    width: 26px;
+    background: #e4393c;
+}
+/*推荐内容*/
+.RM-content{
+    position: relative;
+    overflow: visible;
+    height: 326px;
+}
+.RMC-1{
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.RM-content li{
+    float: left;
+    position: relative;
+    width: 206px;
+    padding: 20px;
+    background: #fff;
+    margin: -1px 0 0 -1px;
+    border: 1px dashed #cacaca;
+    overflow: hidden;
+}
+.RM-content li:hover{
+    z-index: 2;
+    border: 1px solid #e4393c;
+}
+.RMC-pic{
+    width: 160px;
+    margin: 0 auto;
+}
+.RMC-pic img{
+    vertical-align: middle;
+    width: 160px;
+    height: 160px;
+}
+.RMC-name{
+    height: 36px;
+    line-height: 18px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+.RMC-name a{
+    color: #333;
+}
+.RMC-price{
+    width: 100%;
+    margin: 5px 0 2px;
+    overflow: hidden;
+    text-align: center;
+    font-family: verdana;
+    font-size: 14px;
+    color: #d91f20;
+    font-weight: 400;
+}
+.add-button{
+    margin: 10px 0 0;
+    text-align: center;
+}
+.add-button a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 20px;
+    border: 1px solid #999;
+    color: #666;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.add-button a:hover{
+    border-color: #e4393c;
+    background: #e4393c;
+    color: #fff;
+}
+.add-button i{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(img/addtocart-icons.png);
+}
+.add-button a:hover i{
+    background-position: -28px -57px;
+}
+/*操作箭头*/
+.RM-arrow{
+    display: none;
+} 
+.RM-container:hover .RM-arrow{
+    display: block;
+}
+.RM-arrow a{
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 100px;
+    line-height: 100px;
+    background: #f2f2f2;
+    background: rgba(0,0,0,.1);
+    color: #999;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    font-family: simsun;
+}
+.RM-arrow a.pre{
+    left: 0;
+}
+.RM-arrow a.next{
+    right: 3px;
+}
+/*底部导航模块*/
+.bottom-guide{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.BG-banner{
+    position: relative;
+    height: 54px;
+    padding: 20px 0;
+    margin-bottom: 14px;
+    background: #F5F5F5;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+.BG-banner img{
+    position: absolute;
+    display: inline-block;
+}
+.BG-banner img:nth-child(1){
+    margin-left: -490px;
+}
+.BG-banner img:nth-child(2){
+    margin-left: -245px;
+}
+.BG-banner img:nth-child(3){
+    margin-left: 0;
+}
+.BG-banner img:nth-child(4){
+    margin-left: 245px;
+}
+.BG-container{
+    width: 990px;
+    margin: 0 auto;
+}
+.BG-list-1{
+    float: left;
+    width: 222px;
+}
+.BG-list-5{
+    width: 100px;
+}
+.BGL-title{
+    display: block;
+    padding: 6px 0;
+    font: 400 16px/24px "microsoft yahei";
+}
+.BG-list-1 li{
+    clear: both;
+    line-height: 20px;
+}
+.BG-list-1 li a{
+    line-height: 20px;
+}
+/*页面底部信息区域*/
+footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 20px 0 30px;
+    text-align: center;
+    width: 990px;
+    margin: 0 auto;
+    
+    position: relative;
+}
+.footer-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 195px;
+    background-image: url(img/footer-mask.jpg);
+    background-size: cover;
+    filter: blur(3px)
+}
+footer p{
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 195px;
+    font-size: 50px;
+    background-color: #333333;
+    opacity:0.5;
+}

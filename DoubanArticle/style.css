@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:微软雅黑,黑体;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*顶部导航栏模块*/
+header{
+    width: 100%;
+    height: 103px;
+}
+/*顶部连接-条*/
+.top-link{
+    overflow: hidden;
+    background-color: RGB(84,86,82);
+}
+.top-link a{
+    color: gainsboro;
+}
+.top-link .left li{
+    float: left;
+    width: 50px; 
+    text-align: center;
+    line-height: 30px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+.top-link .right{
+    float: right;
+    padding-right: 140px;
+}
+.top-link .right li{
+    float: left;
+    padding-right: 30px; 
+    line-height: 30px;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+/*顶部导航-块*/
+.top-guide{
+    overflow: hidden;
+    width: 100%;
+    background-color: RGB(237,244,237)
+}
+.top-guide ul{
+    overflow: hidden;
+    width: 950px;
+    height: 75px;
+    margin: auto;
+}
+.top-guide input{
+    display: inline-block;
+    padding-right: 0;
+    outline-color: #DEDBDC;
+    height: 30px;
+    width: 270px;
+}
+.top-guide li{
+    float: left;
+    padding-left: 20.8px;
+    text-align: center;
+    line-height: 75px;
+}
+.top-guide li:nth-child(1){
+    width: 160px;
+    line-height: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.top-guide li a{
+    color: RGB(0,119,34);
+    font-family: 黑体;
+    font-size: 17px;
+    font-weight: bold;
+}
+.new{
+    display: inline-block;
+    width: 19px;
+    height: 10px;
+    font-family: 黑体;
+    font-size: 8px;
+    line-height: 8px;
+    background-color: red;
+    color: white;
+    position: relative;
+    top: -4px;
+    left: -4px;
+}
+/*主内容页面各板块宽度固定及BFC*/
+.page{
+    overflow: hidden;
+    width: 950px;
+    margin: auto;
+    padding-bottom: 60px;
+    border-bottom: 1px dashed #DCDCDC;
+/*    outline: 1px solid;*/
+}
+.page a{
+    color: #3377A9
+}
+.main{
+    width: 605px;
+    overflow: hidden;
+    float: left
+}
+.Right{
+    width: 250px;
+    overflow: hidden;
+    float: right;
+}
+/*内容区-输入模块*/
+.inputArea {
+    width: 605px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.inputArea li{
+    display: inline-block;
+    float: left;
+    padding-right: 9px;
+}
+.inputArea a{   
+    font-size: 15px;
+    display: inline-block;
+}
+.inputArea i{
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    background: url(img/icon.png);
+    position: relative;
+    bottom: -4px;
+}
+.inputArea li:nth-child(1) i{
+    background-position: 0px -97px;
+}
+.inputArea li:nth-child(2) i{
+    background: url(img/icon-pic.gif);
+}
+.inputArea li:nth-child(3) i{
+    background-position: 0px -7px;
+}
+.inputArea li:nth-child(4) i{
+    background-position: 0px -128px;
+}
+.inputArea li:nth-child(5) i{
+    background-position: 0px -157px;
+}
+/*输入模块-首页设置项目*/
+.inputArea li:nth-child(6){
+    width: auto;
+    float: right;
+    padding: 0;
+    margin-top: 5px;
+}
+.inputArea li:nth-child(6) i{
+    width: 12px;
+    height: 12px;
+    background: url(img/icon2.gif);
+    position: relative;
+    top: 2px;
+}
+.inputArea li:nth-child(6) a{
+    color: #CFCBCF;
+    font-size: 10px;
+}
+/*输入模块-输入框*/
+.inputArea input{
+    width: 600px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    clear: both;
+    float: left;
+    outline: none
+}
+.input-pic{
+    overflow: hidden;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: 40px;
+    left: 150px;
+    background: url(img/icon.png);
+    background-position: 0 -36px
+}
+.input-code{
+    overflow: hidden;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: -25px;
+    left: 575px;
+    background: url(img/icon.png);
+    background-position: 0 -68px;
+}
+.input-pic a,.input-code a{
+    padding-left: 111px;
+}
+/*内容区-文章模块*/
+.content{
+    width: 100%;
+    height: 240px;  
+    padding-top: 25px;
+}
+.head{
+    width: 48px;
+    height: 48px;
+    background-color: #1F9034;
+    float: left;
+}
+    /*id模块*/
+.name{
+    height: 25px;
+    width: 555px;
+    float: left;
+}
+.name a{
+    display: inline-block;
+    color: black;
+    margin-left: 12px;
+    font-size: 14px;
+}
+.name p{
+    display: inline-block;
+        font-size: 14px;
+
+}
+    /*文章预览区域*/
+.overview{
+    width: 515px;
+    height: 160px;
+    float: right;
+    background-color: #F8F8F8;
+}
+.overview h4{
+    width: 355px;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: normal;
+}
+.overview p{
+    display: inline-block;
+    width: 360px;
+    height: auto;
+    padding-left: 18px;
+    font-size: 12.8px;
+}
+.overview img{
+    width: auto;
+    height: 60px;
+    position: relative;
+    top: -17px;
+}
+.favorite{
+    overflow: hidden;
+    width: 55px;
+    height: 21px;
+    position: relative;
+    top: 98px;
+    left: 110px;
+    background-color: #F8F8F8;
+    text-align: center;
+    border: 1px solid #D4D4D4;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+.favorite i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(img/ic_actions.png)
+}
+.favorite a{
+    color: black;
+    font-family: 黑体;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+}
+.favorite:hover{
+    background-color: #8E9196;
+}
+    /*显示来源*/
+.from{
+    clear: both;
+    height: 55px;
+    width: 515px;
+    float: right;
+    border-bottom: 1px solid #E4E4E4;
+}
+.from span{
+    display: inline-block;
+    margin-top:10px;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #929292;
+}
+.from a{
+    color: #9898B4;
+}
+
+/*----------------------------------------------------------*/
+/*相册模块*/
+    /*相册预览区域*/
+.album-content{
+    width: 100%;
+    height: 300px;  
+    padding-top: 25px;
+}
+.album{
+    width: 515px;
+    height: 180px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    float: right;
+    background-color: #F8F8F8;
+}
+.album img{
+    width: 108px;
+    height: 108px;
+    padding-left: 14px;
+    padding-top: 13px
+}
+.album h4{
+    width: 500px;
+    padding-left: 18px;
+    padding-top:5px;
+    padding-bottom: 15px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: normal;
+}
+    /*标签分类模块*/
+.tag .favorite{
+    display: inline-block;
+    background-color: #F8F8F8;
+    border: 1px solid #D4D4D4;
+    margin-left: 18px;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left
+}
+.tag .favorite:hover{
+    background-color: #8E9196;
+}
+.album ul{
+    display: inline-block;
+    float: left;
+}
+.album ul span{
+    color: #B3B3B3;
+    padding-left: 20px;
+    font-size: 13px;
+    border-left: 1px solid #B0B0B0
+}
+.album li{
+    float: left;
+}
+.album li a{
+    color: #B3B3B3;
+    font-size: 13px;
+    margin-left: 20px;
+}
+/*-------------------------------------------------------*/
+/*页码*/
+.PageNo{
+    width: 400px;
+    clear: both;
+    margin: auto;
+}
+.PageNo li{
+    float: left;
+    text-align: center;
+    padding-left: 20px
+}
+.PageNo li a{
+    font-size: 15px
+}
+/*-------------------------------------------------------*/
+/*侧边栏*/
+.Right p{
+    color: #989898;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.Right a{
+    font-size: 13px
+}
+.Right h3{
+    display: inline-block;
+    color: #007624;
+    font-weight: normal;
+    font-size: 17px
+}
+.news{
+    overflow: hidden;
+    margin-top: 50px;
+    width: 100%;
+    height: 117px;
+    background-color: #F1F6F5;
+}
+.news h3{
+    margin: 15px;
+}
+.news a{
+    margin-left: 15px;
+    line-height: 30px;
+    font-size: 14px
+}
+.banner-1{
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    height: 210px;
+}
+.QR{
+    width: 100%;
+    height: 83px;
+}
+.QR img{
+    width: 100%;
+    height: 83px;
+}
+.hot{
+    overflow: hidden;
+    margin-top: 34px;
+    width: 250px;
+    height: 120px;
+}
+.hot a{
+    font-size: 13px
+}
+.hot img{
+    margin-top: 8px;
+    width: 53px;
+    height: 32px:
+}
+.shop{
+    overflow: hidden;
+    margin-top: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.shop .pic1,.shop .pic2{
+    padding: 5.5px;
+    width: 120px;
+    height: 80px;
+    float: left
+}
+.shop .info1,.shop .info2{
+    padding: 3.5px;
+    width: 100px;
+    height: 80px;
+    float: left
+}
+.shop img{
+    width: 120px;
+    height: 80px;
+}
+.banner2{
+    overflow: hidden;
+    width: 100%;
+    
+}
+/*--------------------------------------------*/
+/*页面底部*/
+footer{
+    width: 950px;
+    margin: auto;
+    height: 45px;
+}
+footer p{
+    float: left;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #989898;
+}
+footer ul{
+    float: right;
+}
+footer li{
+    float: left;
+    padding-left: 10px;
+}
+footer li a{
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #4477B0
+}

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>猫眼电影 - 一网打尽好电影</title>
+    <meta name="Author" content="" />
+    <link rel="icon" href="img/logo_fav.png" sizes="16x16 32x32">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/main-HF.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css"> 
+</head>
+
+<body>
+    <!--1 头部区域-->
+    <header>
+        <div class="header-inner">
+            <a class="site-logo" href="index.html"></a>
+            <!--城市选择模块-->
+            <div class="city-container">
+                <div class="city-selected">
+                    <div class="city-name"> 成都 <span class="caret"></span> </div>
+                </div>
+                <div class="city-list"></div>
+            </div>
+            <!--主页导航-->
+            <nav class="guide">
+                <ul class="guide-bar">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="movie-page.html">电影</a></li>
+                    <li><a href="ranking-page.html">榜单</a></li>
+                    <li><a href="">热点</a></li>
+                </ul>
+            </nav>
+            <!--用户信息、搜索、APP下载模块-->
+            <div class="user-info">
+                <div class="user-icon"> <img src="img/home-page/user-icon.png" alt=""> <span class="caret"></span> </div>
+                <ul class="user-menu">
+                    <li><a href="loging-page.html">登录</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <input class="search" type="text" placeholder="找影视剧、影人、影院">
+                <input class="submit-search" type="submit" value=""> </form>
+            <div class="app-download">
+                <a href=""> <i class="phone-icon"></i> <span class="apptext">APP下载</span> <span class="caret"></span>
+                    <div class="download-icon">
+                        <p class="DLtext-1">扫码下载APP</p>
+                        <p class="DLtext-2">选座更优惠</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--1-1 头部占位符，将主内容排列到header之下-->
+    <div class="header-placeholder"></div>
+    <!--2 主横幅展示区-->
+    <div class="banner">
+        <div class="banner-content"> 
+            <a href="news-page.html">
+            <img class="pic-banner" src="img/home-page/banner1.jpg" alt="banner">
+            <a class="prev" href=""></a>
+            <a class="next" href=""></a>
+            </a>
+        </div>
+    </div>
+    <!--3 主内容区域-->
+    <div class="container">
+        <article>
+            <!--3-1-1 “正在热映”模块，电影海报列表-->
+            <div class="pane-1">
+                <div class="p1-head">
+                    <h1>正在热映（35部）</h1>
+                    <a class="all" href="">全部<span class="arrow-link"> ></span></a>
+                </div>
+                <dl class="movie-list">
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="details-page.html" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/cover2.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.7</i> </div>
+                                            <div class="movie-name" title="你的名字。">你的名字。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver"></div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/cover1.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">8</i><i class="fraction">.4</i> </div>
+                                            <div class="movie-name" title="你的名字。">间谍同盟</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver"></div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/cover3.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.2</i> </div>
+                                            <div class="movie-name" title="你的名字。">海洋奇缘</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3d"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/cover4.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.0</i> </div>
+                                            <div class="movie-name" title="你的名字。">神奇动物在哪里</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3dimax"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                               <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/cover5.jpeg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.6</i> </div>
+                                            <div class="movie-name" title="你的名字。">佩小姐的奇幻城堡</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3d"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <div class="movie-poster"> <img src="img/home-page/cover6.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer"></i><i class="fraction"></i> </div>
+                                            <div class="movie-name" title="你的名字。">极速之巅</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3d"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                               <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/cover7.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.7</i> </div>
+                                            <div class="movie-name" title="你的名字。">三少爷的剑</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3d"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <div class="movie-poster"> <img src="img/home-page/cover8.png">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">8</i><i class="fraction">.6</i> </div>
+                                            <div class="movie-name" title="你的名字。">超级快递</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="buy-ticket"> <a href="" class="active" target="_blank">购 票</a> </div>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                </dl>
+            </div>
+<!--            3-1-2 “即将上映”模块-->
+           <div class="pane-1 p2-head">
+               <div class="p1-head p2-head">
+                   <h1>即将上映（247部）</h1><a class="all" href="">全部<span class="arrow-link"> ></span></a>
+                </div>
+                <dl class="movie-list">
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover1.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">试睡员48小时</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>455</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月6日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover2.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">血战钢锯岭</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>15230</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale-on" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月8日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover3.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">28岁未成年</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>93935</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale-on" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月9日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover4.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">爸爸的3次婚礼</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>21792</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月9日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover5.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">呆呆计划</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>13937</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月9日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover6.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">萨利机长</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>13780/span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale-on" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver">
+                                <i class="v2dimax"></i>
+                            </div>
+                        </div>
+                        <div class="movie-date">12月9日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover7.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">爱上试睡师</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>13252</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月9日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/PREcover8.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                            <div class="movie-name" title="你的名字。">反黑行动组</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="movie-wish">
+                                <span>10385</span>人想看
+                            </div>
+                            <div class="movie-presale"> 
+                            <a href="" class="preview" target="_blank">预告片</a><a href="" class="presale" target="_blank">预 售</a>
+                            </div>
+                            <!--电影版本及上映时间-->
+                            <div class="movie-ver"></div>
+                        </div>
+                        <div class="movie-date">12月9日上映</div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                </dl> 
+            </div>
+<!--            3-1-3 “热播电影”模块-->
+            <div class="pane-1">
+                <div class="p1-head">
+                    <h1>热播电影</h1><a class="all" href="">全部<span class="arrow-link"> ></span></a>
+                    <ul>
+                        <li><a class="kind" href="">爱情</a></li>
+                        <li><a class="kind" href="">喜剧</a></li>
+                        <li><a class="kind" href="">动作</a></li>
+                        <li><a class="kind" href="">恐怖</a></li>
+                        <li><a class="kind" href="">动画</a></li>
+                    </ul>
+                </div>
+                <dl class="movie-list p3-list">
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster poster-long"> <img src="img/home-page/HOTcover1.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">8</i><i class="fraction">.3</i> </div>
+                                            <div class="movie-name" title="你的名字。">厨子戏子痞子</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver"></div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/HOTcover2.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">8</i><i class="fraction">.5</i> </div>
+                                            <div class="movie-name" title="你的名字。">同桌的你</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver"></div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/HOTcover3.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.1</i> </div>
+                                            <div class="movie-name" title="你的名字。">寻龙诀</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3dimax"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/HOTcover4.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">7</i><i class="fraction">.7</i> </div>
+                                            <div class="movie-name" title="你的名字。">一个勺子</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver"></div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                               <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/HOTcover5.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">9</i><i class="fraction">.3</i> </div>
+                                            <div class="movie-name" title="你的名字。">战狼</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v3d"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                                <div class="movie-poster"> <img src="img/home-page/HOTcover6.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score">8<i class="integer"></i><i class="fraction">.4</i> </div>
+                                            <div class="movie-name" title="港囧">港囧</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver">
+                                <i class="v2dimax"></i>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                    <!--单位电影海报模块结构-->
+                    <dd>
+                        <div class="movie-item">
+                            <a href="" target="_blank">
+                               <!--更改海报和信息-->
+                                <div class="movie-poster"> <img src="img/home-page/HOTcover7.jpg">
+                                    <div class="poster-bg">
+                                        <div class="movie-info">
+                                           <div class="movie-score"> <i class="integer">8</i><i class="fraction">.9</i> </div>
+                                            <div class="movie-name" title="催眠大师">催眠大师</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--电影版本-->
+                            <div class="movie-ver"></div>
+                        </div>
+                    </dd>
+                    <!--单位电影海报模块结束位置-->
+                </dl>
+            </div>
+        </article>
+    <!--3-2 侧边栏-->
+    <aside>
+        <div class="pane-1">
+           <div class="p1-head">
+<!--           3-2-1今日票房模块-->
+            <h1>今日票房</h1>
+            </div>
+            <ul class="rank-content tody-boxoffice">
+<!--               票房排行最高项-->
+                <li class="rank-top">
+                    <a href="details-page.html" target="_blank">
+                        <div class="RKT-left">
+                            <i class="RKT-icon"></i>
+                            <img class="RK-cover" src="img/home-page/RK-cover1.jpg" alt="">
+                        </div>
+                        <div class="RKT-right">
+                            <p class="RKT-movieName">你的名字。</p>
+                            <p class="RK-boxOffice"><span>1.4</span>亿</p>
+                        </div>
+                    </a>
+                </li>
+<!--                普通项目排行列表-->
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i class="sec">2</i>
+                        <span class="RK-movieName">神奇动物在哪里</span>
+                        <span class="RK-boxOffice BO-normal"><span>872.04</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i class="tri">3</i>
+                        <span class="RK-movieName">佩小姐的奇幻城堡</span>
+                        <span class="RK-boxOffice BO-normal"><span>542.96</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>4</i>
+                        <span class="RK-movieName">海洋奇缘</span>
+                        <span class="RK-boxOffice BO-normal"><span>325.05</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>5</i>
+                        <span class="RK-movieName">三少爷的剑</span>
+                        <span class="RK-boxOffice BO-normal"><span>254.49</span>万</span>
+                    </a>
+                </li>
+                
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>6</i>
+                        <span class="RK-movieName">超级快递</span>
+                        <span class="RK-boxOffice BO-normal"><span>145.25</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>7</i>
+                        <span class="RK-movieName">极速之巅</span>
+                        <span class="RK-boxOffice BO-normal"><span>55.01</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>8</i>
+                        <span class="RK-movieName">比利·林恩的中场战事</span>
+                        <span class="RK-boxOffice BO-normal"><span>41.98</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>9</i>
+                        <span class="RK-movieName">间谍同盟</span>
+                        <span class="RK-boxOffice BO-normal"><span>38.72</span>万</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>10</i>
+                        <span class="RK-movieName">我不是潘金莲</span>
+                        <span class="RK-boxOffice BO-normal"><span>38.26</span>万</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+<!--       3-2-1-1 今日大盘模块-->
+        <div class="today-total">
+            <h3>今日大盘</h3>
+            <div class="text-content">
+                <p><span class="num">1.66</span>亿
+                <a href="">查看更多<span class="arrow-link"> ></span></a></p>
+                <p class="meta-info">北京时间 <span>12:30:00</span><span class="info-right">猫眼专业版实时票房数据</span></p>
+            </div>
+        </div>
+        <div class="pane-1 RK-expect">
+            <div class="p1-head">
+<!--              3-2-2 最受期待模块-->
+                <h1>最受期待</h1>
+                <a class="rank-all-link" href="ranking-page.html">查看完整榜单<span class="arrow-link"> ></span></a>
+            </div>
+            <ul class="rank-content">
+                <li class="rank-top">
+                    <a href="" target="_blank">
+                        <div class="RKT-left">
+                            <i class="RKT-icon"></i>
+                            <img class="RK-cover" src="img/home-page/RKWish-cover.jpeg" alt="">
+                        </div>
+                        <div class="RKT-right">
+                            <p class="RKT-movieName">长城</p>
+                            <p class="RK-time">上映时间：2016-12-16</p>
+                            <p class="RK-wish"><span>187496</span>人想看</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="rank-SmPane">
+                    <a href="" target="_blank">
+                        <i class="RK-Num">2</i>
+                        <img src="img/home-page/RKWish-cover2.jpg" alt="">
+                        <p class="RKT-movieName">摆渡人</p>
+                        <p class="RK-wish"><span>133256</span>人想看</p>
+                    </a>
+                </li>
+                
+                <li class="rank-SmPane">
+                    <a href="" target="_blank">
+                        <i class="RK-Num">3</i>
+                        <img src="img/home-page/RKWish-cover3.jpeg" alt="">
+                        <p class="RKT-movieName">大闹天竺</p>
+                        <p class="RK-wish"><span>129426</span>人想看</p>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>4</i>
+                        <span class="RK-movieName">西游记·伏魔篇</span>
+                        <span class="RK-boxOffice BO-normal"><span>92926</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>5</i>
+                        <span class="RK-movieName">28岁未成年</span>
+                        <span class="RK-boxOffice BO-normal"><span>97622</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>6</i>
+                        <span class="RK-movieName">那年夏天你去了哪里</span>
+                        <span class="RK-boxOffice BO-normal"><span>33996</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>7</i>
+                        <span class="RK-movieName">加勒比海盗5：死无对证</span>
+                        <span class="RK-boxOffice BO-normal"><span>207013</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>8</i>
+                        <span class="RK-movieName">功夫瑜伽</span>
+                        <span class="RK-boxOffice BO-normal"><span>32085</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>9</i>
+                        <span class="RK-movieName">纯洁心灵·逐梦演艺圈</span>
+                        <span class="RK-boxOffice BO-normal"><span>52759</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>10</i>
+                        <span class="RK-movieName">爱上试睡师</span>
+                        <span class="RK-boxOffice BO-normal"><span>13941</span>人想看</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--           3-2-3 TOP100模块-->
+        <div class="pane-1 RK-top100">
+           <div class="p1-head RK-expect">
+            <h1>TOP100</h1>
+            <a class="rank-all-link" href="">查看完整榜单<span class="arrow-link"> ></span></a>
+            </div>
+            <ul class="rank-content tody-boxoffice">
+<!--               票房排行最高项-->
+                <li class="rank-top">
+                    <a href="" target="_blank">
+                        <div class="RKT-left">
+                            <i class="RKT-icon"></i>
+                            <img class="RK-cover" src="img/home-page/bawangbieji.jpg" alt="">
+                        </div>
+                        <div class="RKT-right">
+                            <p class="RKT-movieName">霸王别姬</p>
+                            <p class="RK-boxOffice"><span>9.6</span>分</p>
+                        </div>
+                    </a>
+                </li>
+<!--                普通项目排行列表-->
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i class="sec">2</i>
+                        <span class="RK-movieName">肖申克的救赎</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.5</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i class="tri">3</i>
+                        <span class="RK-movieName">这个杀手不太冷</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.5</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>4</i>
+                        <span class="RK-movieName">罗马假日</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.1</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>5</i>
+                        <span class="RK-movieName">阿甘正传</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.4</span>分</span>
+                    </a>
+                </li>
+                
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>6</i>
+                        <span class="RK-movieName">泰坦尼克号</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.5</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>7</i>
+                        <span class="RK-movieName">龙猫</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.2</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>8</i>
+                        <span class="RK-movieName">教父</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.3</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>9</i>
+                        <span class="RK-movieName">唐伯虎点秋香</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.2</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank">
+                        <i>10</i>
+                        <span class="RK-movieName">千与千寻</span>
+                        <span class="RK-boxOffice BO-normal"><span>9.3</span>分</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    </div>
+<!--    底部区域-->
+    <footer>
+        <p class="friendly-link">
+            友情链接：
+            <a href="" target="_blank">美团网</a>
+            <span></span>
+            <a href="" target="_blank">美团下载</a>
+        </p>
+        <p class="page-info">
+            &copy;2016 猫眼电影 maoyan.com 
+            <a href="" target="_blank">京ICP证160733号</a>
+            <a href="" target="_blank">京ICP备16022489号-1</a>  
+            京公网安备 11010502030881号
+            <a href="" target="_blank">网络文化经营许可证</a>
+            <a href="" target="_blank">电子公告服务规则</a>
+        </p>
+        <p>北京猫眼文化传媒有限公司</p>
+    </footer>
+</body>
+</html>
